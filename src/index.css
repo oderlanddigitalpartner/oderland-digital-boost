@@ -52,11 +52,6 @@
     --gradient-primary: linear-gradient(135deg, hsl(var(--brand-800)), hsl(var(--brand-600)));
     --gradient-hero: linear-gradient(135deg, hsl(var(--brand-600)) 0%, hsl(var(--brand-400)) 100%);
     --gradient-accent: linear-gradient(135deg, hsl(var(--accent-emerald)) 0%, hsl(var(--brand-400)) 100%);
-
-    /* Shadows */
-    --shadow-soft: 0 2px 8px -2px hsl(var(--brand-800) / 0.1);
-    --shadow-medium: 0 4px 16px -4px hsl(var(--brand-800) / 0.2);
-    --shadow-strong: 0 8px 32px -8px hsl(var(--brand-800) / 0.3);
   }
 
   body {
