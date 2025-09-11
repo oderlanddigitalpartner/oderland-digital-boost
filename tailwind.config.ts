@@ -19,6 +19,15 @@ export default {
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        // Brand Colors
+        "brand-800": "hsl(var(--brand-800))",
+        "brand-600": "hsl(var(--brand-600))",
+        "brand-400": "hsl(var(--brand-400))",
+        "accent-emerald": "hsl(var(--accent-emerald))",
+        "gray-900": "hsl(var(--gray-900))",
+        "gray-600": "hsl(var(--gray-600))",
+        "gray-200": "hsl(var(--gray-200))",
+        "white": "hsl(var(--white))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
