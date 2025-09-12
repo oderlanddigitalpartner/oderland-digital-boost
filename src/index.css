@@ -1,0 +1,107 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Oderland Digitalpartner Design System - Professional & Trustworthy */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 210 40% 11%;
+
+    /* Brand Colors - Professional Blue Palette */
+    --brand-800: 215 76% 19%; /* #0A2E5C */
+    --brand-600: 213 75% 34%; /* #145DA0 */ 
+    --brand-400: 204 90% 61%; /* #3FA9F5 */
+    --accent-emerald: 162 82% 44%; /* #1FBF90 */
+    
+    /* Grays */
+    --gray-900: 222 84% 5%; /* #0F172A */
+    --gray-600: 215 16% 47%; /* #475569 */
+    --gray-200: 214 32% 91%; /* #E2E8F0 */
+    --white: 0 0% 100%; /* #FFFFFF */
+
+    /* Semantic Tokens */
+    --card: 0 0% 100%;
+    --card-foreground: 215 16% 47%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 84% 5%;
+
+    --primary: 215 76% 19%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 204 90% 61%;
+    --secondary-foreground: 215 76% 19%;
+
+    --accent: 162 82% 44%;
+    --accent-foreground: 0 0% 100%;
+
+    --muted: 214 32% 91%;
+    --muted-foreground: 215 16% 47%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 214 32% 91%;
+    --input: 214 32% 91%;
+    --ring: 204 90% 61%;
+    --radius: 0.75rem;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--brand-800)), hsl(var(--brand-600)));
+    --gradient-hero: linear-gradient(135deg, hsl(var(--brand-600)) 0%, hsl(var(--brand-400)) 100%);
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent-emerald)) 0%, hsl(var(--brand-400)) 100%);
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+    font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-semibold tracking-tight;
+  }
+
+  h1 {
+    @apply text-4xl md:text-5xl lg:text-6xl;
+  }
+
+  h2 {
+    @apply text-3xl md:text-4xl lg:text-5xl;
+  }
+
+  h3 {
+    @apply text-2xl md:text-3xl;
+  }
+
+  .btn-primary {
+    @apply bg-gradient-to-r from-brand-800 to-brand-600 text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2;
+  }
+
+  .btn-secondary {
+    @apply border-2 border-brand-600 text-brand-600 px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:bg-brand-600 hover:text-white focus:outline-none focus:ring-2 focus:ring-brand-400 focus:ring-offset-2;
+  }
+
+  .btn-accent {
+    @apply bg-accent text-white px-6 py-3 rounded-lg font-medium transition-all duration-300 hover:shadow-lg hover:scale-105 focus:outline-none focus:ring-2 focus:ring-accent focus:ring-offset-2;
+  }
+
+  .card {
+    @apply bg-white rounded-xl shadow-soft border border-gray-200 transition-all duration-300 hover:shadow-medium;
+  }
+
+  .wave-decoration {
+    background: linear-gradient(135deg, hsl(var(--brand-400) / 0.1) 0%, transparent 70%);
+  }
+}
+
+@layer components {
+  .smooth-scroll {
+    scroll-behavior: smooth;
+  }
+
+  .focus-visible:focus {
+    @apply outline-none ring-2 ring-brand-400 ring-offset-2;
+  }
+}
