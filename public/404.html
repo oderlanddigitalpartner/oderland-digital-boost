@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>404</title>
+    <meta http-equiv="refresh" content="0; url=/index.html#" />
+  </head>
+  <body>
+    <script>
+      // Preserve path by moving it into the hash so HashRouter can handle it
+      (function() {
+        var locationPath = location.pathname.replace(/^\/+/, '');
+        var newUrl = '/index.html#/' + locationPath + location.search + location.hash;
+        window.location.replace(newUrl);
+      })();
+    </script>
+  </body>
+</html>
