@@ -62,6 +62,22 @@
 
   <body>
     <div id="root"></div>
+    <script>
+      // Redirect to the built app when opened via file:// by double-clicking this file
+      (function () {
+        var isFileProtocol = location.protocol === 'file:';
+        var alreadyInDist = /\/dist\//.test(location.pathname);
+        if (isFileProtocol && !alreadyInDist) {
+          var target = './dist/index.html';
+          try {
+            // Prefer assigning to preserve back button behavior
+            location.href = target;
+          } catch (_) {
+            window.location = target;
+          }
+        }
+      })();
+    </script>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

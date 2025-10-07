@@ -5,12 +5,14 @@ import { componentTagger } from "lovable-tagger";
 
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
-  // For GitHub Pages deployments served under /<repo-name>/, set base accordingly.
-  // In GitHub Actions, GITHUB_REPOSITORY is available as owner/repo.
+  // Use relative base in production builds so dist works via file://
+  // Preserve GitHub Pages support via env var when building in CI
   base:
-    process.env.GITHUB_REPOSITORY
-      ? `/${process.env.GITHUB_REPOSITORY.split("/").pop()}/`
-      : "/",
+    mode === 'production'
+      ? (process.env.GITHUB_REPOSITORY
+          ? `/${process.env.GITHUB_REPOSITORY.split("/").pop()}/`
+          : './')
+      : '/',
   server: {
     host: "::",
     port: 8080,
