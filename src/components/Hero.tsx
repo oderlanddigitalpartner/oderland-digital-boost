@@ -64,14 +64,15 @@ const Hero = ({ onOpenModal }: HeroProps) => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <Button 
-                onClick={onOpenModal}
-                className="btn-primary flex items-center space-x-2 text-lg px-8 py-4"
-              >
-                <span>Erstgespräch buchen</span>
-                <ArrowRight className="w-5 h-5" />
-              </Button>
-              
+              <form action="calendly.com/oderlanddigitalpartner">
+                <Button 
+                  type="submit"
+                  className="btn-primary flex items-center space-x-2 text-lg px-8 py-4"
+                >
+                  <span>Erstgespräch buchen</span>
+                  <ArrowRight className="w-5 h-5" />
+                </Button>
+              </form>
               <Button 
                 onClick={scrollToServices}
                 variant="outline"
@@ -85,12 +86,6 @@ const Hero = ({ onOpenModal }: HeroProps) => {
             {/* Trust indicator */}
             <div className="mt-8 pt-8 border-t border-gray-200">
               <p className="text-sm text-gray-500 mb-4">Bewährte Lösungen für lokale Unternehmen</p>
-              <div className="flex items-center justify-center lg:justify-start space-x-8 opacity-60">
-                {/* Placeholder logos */}
-                {Array.from({ length: 4 }).map((_, i) => (
-                  <div key={i} className="bg-gray-300 h-8 w-20 rounded"></div>
-                ))}
-              </div>
             </div>
           </div>
 

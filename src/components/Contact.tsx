@@ -99,13 +99,15 @@ const Contact = () => {
                   Buchen Sie direkt einen Termin in unserem Kalender. 
                   Kostenlos, unverbindlich und ohne Wartezeit.
                 </p>
-                <button 
-                  onClick={() => alert('Calendly-Integration würde hier öffnen')}
+                <form action="calendly.com/oderlanddigitalpartner"> 
+                  <button 
+                  type="submit"
                   className="btn-secondary flex items-center space-x-2 mx-auto md:mx-0"
-                >
+                  >
                   <ExternalLink className="w-4 h-4" />
                   <span>Termin direkt buchen</span>
-                </button>
+                  </button>
+                </form>
               </div>
 
               <div className="text-center">
