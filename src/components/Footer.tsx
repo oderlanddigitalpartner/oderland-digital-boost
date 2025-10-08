@@ -154,7 +154,7 @@ const Footer = () => {
                     href="tel:+49017624961833"
                     className="text-brand-200 hover:text-white transition-colors"
                   >
-                    +49 (0) 33xx 123456
+                    +49 176 24961833
                   </a>
                   <p className="text-brand-300 text-sm">Mo-Fr 9-17 Uhr</p>
                 </div>

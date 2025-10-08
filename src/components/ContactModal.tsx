@@ -323,7 +323,7 @@ const ContactModal = ({ isOpen, onClose }: ContactModalProps) => {
           <div className="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4 pt-6 border-t border-gray-200">
             <div className="text-sm text-gray-500">
               <p>Oder rufen Sie direkt an:</p>
-              <p className="font-medium text-brand-600">+49 (0) 33xx 123456</p>
+              <p className="font-medium text-brand-600">+49 176 24961833</p>
             </div>
             
             <div className="flex items-center space-x-3">
