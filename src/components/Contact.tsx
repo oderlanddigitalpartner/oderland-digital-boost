@@ -5,16 +5,16 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'E-Mail',
-      info: 'hallo@oderland-digitalpartner.de',
+      info: 'contact@oderlanddigitalpartner.de',
       subtitle: 'Antwort innerhalb von 24h',
-      action: 'mailto:hallo@oderland-digitalpartner.de'
+      action: 'mailto:contact@oderlanddigitalpartner.de'
     },
     {
       icon: Phone,
       title: 'Telefon',
       info: '+49 (0) 33xx 123456',
       subtitle: 'Mo-Fr 9:00 - 17:00 Uhr',
-      action: 'tel:+4933xx123456'
+      action: 'tel:+49017624961833'
     },
     {
       icon: MapPin,

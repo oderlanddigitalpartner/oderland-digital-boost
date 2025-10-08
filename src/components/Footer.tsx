@@ -142,10 +142,10 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <a 
-                    href="mailto:hallo@oderland-digitalpartner.de"
+                    href="mailto:contact@oderlanddigitalpartner.de"
                     className="text-brand-200 hover:text-white transition-colors"
                   >
-                    hallo@oderland-digitalpartner.de
+                    contact@oderlanddigitalpartner.de
                   </a>
                   <p className="text-brand-300 text-sm">Antwort in 24h</p>
                 </div>
@@ -155,7 +155,7 @@ const Footer = () => {
                 <Phone className="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <a 
-                    href="tel:+4933xx123456"
+                    href="tel:+49017624961833"
                     className="text-brand-200 hover:text-white transition-colors"
                   >
                     +49 (0) 33xx 123456
