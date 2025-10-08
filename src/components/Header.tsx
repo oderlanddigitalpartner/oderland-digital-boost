@@ -37,15 +37,11 @@ const Header = ({ onOpenModal }: HeaderProps) => {
           {/* Logo */}
           <div className="flex items-center space-x-2">
             <div className="flex items-center">
-              <svg 
-                className="w-8 h-8 text-brand-600" 
-                viewBox="0 0 32 32" 
-                fill="currentColor"
-              >
-                <path d="M2 8C2 6.89543 2.89543 6 4 6H28C29.1046 6 30 6.89543 30 8V24C30 25.1046 29.1046 26 28 26H4C2.89543 26 2 25.1046 2 24V8Z" />
-                <path d="M8 12L16 18L24 12" stroke="white" strokeWidth="2" fill="none" />
-                <path d="M26 10L28 12L26 14" stroke="#3FA9F5" strokeWidth="2" fill="none" />
-              </svg>
+            <img
+              src="/favicon.ico"
+              alt="Oderland Digitalpartner"
+              className="w-8 h-8"
+            />
               <span className="ml-2 text-xl font-bold text-brand-800">
                 Oderland <span className="text-brand-600">Digitalpartner</span>
               </span>

@@ -11,12 +11,12 @@ const References = () => {
       metrics: [
         { icon: TrendingUp, label: 'Anfragen', value: '+38%', period: '3 Monaten' },
         { icon: Users, label: 'Webseitenbesucher', value: '+156%', period: '6 Monaten' },
-        { icon: Calendar, label: 'Online-Termine', value: '24/Monat', period: 'durchschnittlich' }
+        { icon: Calendar, label: 'Online-Termine', value: '24/Monat', period: '6 Monaten' }
       ],
       industry: 'Handwerk'
     },
     {
-      title: 'Restaurant Oderblick - Social Media',
+      title: 'Restaurant Golden Wok Strausnerg',
       description: 'Komplette Social-Media-Strategie mit automatisierter Terminplanung und Community-Management',
       image: caseStudy2,
       metrics: [
