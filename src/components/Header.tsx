@@ -71,14 +71,15 @@ const Header = ({ onOpenModal }: HeaderProps) => {
 
           {/* CTA Button */}
           <div className="hidden lg:block">
-            <Button 
-              onClick={onOpenModal}
-              className="btn-primary flex items-center space-x-2"
-            >
-              <Phone className="w-4 h-4" />
-              <span>Kostenloses Erstgespräch</span>
-              <ArrowRight className="w-4 h-4" />
-            </Button>
+            <a href="https://calendly.com/oderlanddigitalpartner" target="_blank" rel="noopener noreferrer">
+              <Button 
+                className="btn-primary flex items-center space-x-2"
+              >
+                <Phone className="w-4 h-4" />
+                <span>Kostenloses Erstgespräch</span>
+                <ArrowRight className="w-4 h-4" />
+              </Button>
+            </a>
           </div>
 
           {/* Mobile Menu Toggle */}
@@ -112,16 +113,14 @@ const Header = ({ onOpenModal }: HeaderProps) => {
                   {item.label}
                 </button>
               ))}
-              <Button 
-                onClick={() => {
-                  onOpenModal();
-                  setIsMenuOpen(false);
-                }}
-                className="btn-primary flex items-center justify-center space-x-2 mt-4"
-              >
-                <Phone className="w-4 h-4" />
-                <span>Kostenloses Erstgespräch</span>
-              </Button>
+              <a href="https://calendly.com/oderlanddigitalpartner" target="_blank" rel="noopener noreferrer" className="mt-4">
+                <Button 
+                  className="btn-primary flex items-center justify-center space-x-2 w-full"
+                >
+                  <Phone className="w-4 h-4" />
+                  <span>Kostenloses Erstgespräch</span>
+                </Button>
+              </a>
             </nav>
           </div>
         )}

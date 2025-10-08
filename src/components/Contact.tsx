@@ -11,10 +11,10 @@ const Contact = () => {
     },
     {
       icon: Phone,
-      title: 'Telefon',
-      info: '+49 (0) 33xx 123456',
-      subtitle: 'Mo-Fr 9:00 - 17:00 Uhr',
-      action: 'tel:+49017624961833'
+      title: 'Termin buchen',
+      info: 'Kostenloses Erstgespräch',
+      subtitle: 'Calendly Terminbuchung',
+      action: 'https://calendly.com/oderlanddigitalpartner'
     },
     {
       icon: MapPin,
@@ -99,15 +99,14 @@ const Contact = () => {
                   Buchen Sie direkt einen Termin in unserem Kalender. 
                   Kostenlos, unverbindlich und ohne Wartezeit.
                 </p>
-                <form action="calendly.com/oderlanddigitalpartner"> 
+                <a href="https://calendly.com/oderlanddigitalpartner" target="_blank" rel="noopener noreferrer">
                   <button 
-                  type="submit"
-                  className="btn-secondary flex items-center space-x-2 mx-auto md:mx-0"
+                    className="btn-secondary flex items-center space-x-2 mx-auto md:mx-0"
                   >
-                  <ExternalLink className="w-4 h-4" />
-                  <span>Termin direkt buchen</span>
+                    <ExternalLink className="w-4 h-4" />
+                    <span>Termin direkt buchen</span>
                   </button>
-                </form>
+                </a>
               </div>
 
               <div className="text-center">

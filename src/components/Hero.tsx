@@ -17,7 +17,7 @@ const Hero = ({ onOpenModal }: HeroProps) => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden">
       {/* Background */}
-      <div className="absolute inset-0 wave-decoration"></div>
+      <div className="absolute inset-0 wave-decoration pointer-events-none"></div>
       
       {/* Wave decoration */}
       <div className="absolute bottom-0 left-0 right-0">
@@ -64,15 +64,14 @@ const Hero = ({ onOpenModal }: HeroProps) => {
 
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
-              <form action="calendly.com/oderlanddigitalpartner">
+              <a href="https://calendly.com/oderlanddigitalpartner" target="_blank" rel="noopener noreferrer">
                 <Button 
-                  type="submit"
                   className="btn-primary flex items-center space-x-2 text-lg px-8 py-4"
                 >
                   <span>Erstgespräch buchen</span>
                   <ArrowRight className="w-5 h-5" />
                 </Button>
-              </form>
+              </a>
               <Button 
                 onClick={scrollToServices}
                 variant="outline"
