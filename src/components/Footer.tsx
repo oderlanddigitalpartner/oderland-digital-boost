@@ -138,10 +138,10 @@ const Footer = () => {
                 <Mail className="w-5 h-5 text-brand-400 mt-0.5 flex-shrink-0" />
                 <div>
                   <a 
-                    href="mailto:contact@oderlanddigitalpartner.de"
+                    href="mailto:kontakt@oderlanddigitalpartner.de"
                     className="text-brand-200 hover:text-white transition-colors"
                   >
-                    contact@oderlanddigitalpartner.de
+                    kontakt@oderlanddigitalpartner.de
                   </a>
                   <p className="text-brand-300 text-sm">Antwort in 24h</p>
                 </div>
@@ -173,12 +173,11 @@ const Footer = () => {
             <div className="mt-8">
               <h4 className="font-medium text-brand-100 mb-3">Folgen Sie uns</h4>
               <div className="flex space-x-3">
-                <div className="w-8 h-8 bg-brand-600 rounded-full flex items-center justify-center">
-                  <ExternalLink className="w-4 h-4" />
-                </div>
-                <div className="w-8 h-8 bg-brand-600 rounded-full flex items-center justify-center">
-                  <ExternalLink className="w-4 h-4" />
-                </div>
+                <a href="https://www.instagram.com/oderlanddigitalpartner" target="_blank" rel="noopener noreferrer">
+                  <div className="w-8 h-8 bg-brand-600 rounded-full flex items-center justify-center">
+                    <ExternalLink className="w-4 h-4" />
+                  </div>
+                </a>
               </div>
             </div>
           </div>

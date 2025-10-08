@@ -5,9 +5,9 @@ const Contact = () => {
     {
       icon: Mail,
       title: 'E-Mail',
-      info: 'contact@oderlanddigitalpartner.de',
+      info: 'kontakt@oderlanddigitalpartner.de',
       subtitle: 'Antwort innerhalb von 24h',
-      action: 'mailto:contact@oderlanddigitalpartner.de'
+      action: 'mailto:kontakt@oderlanddigitalpartner.de'
     },
     {
       icon: Phone,
